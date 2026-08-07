@@ -44,20 +44,20 @@ Group averages are the arithmetic means of their four dimensions. Total Avg. is 
 
 ### Matched CS subset: 21 topics
 
-This subset contains the 21 computer science topics shared by every evaluated system. It provides a matched comparison under identical topic coverage; it is not a separate benchmark split. The machine-readable results are available in [`results/main_results_cs21.csv`](results/main_results_cs21.csv).
+This subset contains the 21 computer science topics shared by every evaluated system. It provides a matched comparison under identical topic coverage; it is not a separate benchmark split. The CSV reports the same 16 criteria and aggregation convention as the 30-topic main result: [`results/main_results_cs21.csv`](results/main_results_cs21.csv).
 
-| Method | Total Avg. |
-|---|---:|
-| Human | 4.38 |
-| DAS | **4.32** |
-| Naive RAG | 3.96 |
-| Gemini Deep Research | 3.93 |
-| IterSurvey | 3.86 |
-| SurveyForge | 3.78 |
-| AutoSurvey | 3.73 |
-| GPT Deep Research | 3.71 |
-| LiRA | 3.60 |
-| Codex | 3.18 |
+| Method | BSC Avg. | TSQ Avg. | HDQ Avg. | MAR Avg. | Total Avg. |
+|---|---:|---:|---:|---:|---:|
+| Human | 3.89 | 4.37 | 4.27 | 5.00 | 4.38 |
+| Codex | 2.79 | 2.99 | 2.75 | 4.20 | 3.18 |
+| GPT Deep Research | 3.40 | 3.51 | 3.80 | 4.14 | 3.71 |
+| Gemini Deep Research | 3.06 | 3.82 | 4.05 | 4.77 | 3.93 |
+| Naive RAG | 3.67 | 4.00 | 4.11 | 4.07 | 3.96 |
+| AutoSurvey | 3.81 | 3.74 | 3.69 | 3.67 | 3.73 |
+| SurveyForge | 3.73 | 3.81 | 3.74 | 3.83 | 3.78 |
+| LiRA | 3.63 | 3.70 | 4.05 | 3.04 | 3.60 |
+| InteractiveSurvey | 2.82 | 3.90 | 3.94 | 4.79 | 3.86 |
+| DAS | **3.87** | **4.18** | **4.25** | **5.00** | **4.32** |
 
 ## Compared systems
 
