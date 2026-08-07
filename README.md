@@ -37,7 +37,7 @@ All values use a 1--5 scale, and higher is better. Human performance is provided
 | AutoSurvey | 3.81 | 3.74 | 3.69 | 3.67 | 3.73 |
 | SurveyForge | 3.73 | 3.81 | 3.74 | 3.83 | 3.78 |
 | LiRA | 3.63 | 3.72 | 4.06 | 3.07 | 3.62 |
-| IterSurvey | 2.75 | 3.88 | 3.93 | 4.68 | 3.81 |
+| InteractiveSurvey | 2.75 | 3.88 | 3.93 | 4.68 | 3.81 |
 | DAS | **3.85** | **4.22** | **4.28** | **5.00** | **4.34** |
 
 Group averages are the arithmetic means of their four dimensions. Total Avg. is the arithmetic mean of all 16 dimensions, equivalently the mean of the four group averages before display rounding.
@@ -79,7 +79,33 @@ The following tables link to the official papers, product pages, source reposito
 | AutoSurvey | [Wang et al. (2024)](https://arxiv.org/abs/2406.10252) | [AutoSurveys/AutoSurvey](https://github.com/AutoSurveys/AutoSurvey) | [Paper database](https://1drv.ms/u/c/8761b6d10f143944/EaqWZ4_YMLJIjGsEB_qtoHsBoExJ8bdppyBc1uxgijfZBw?e=2EIzti) | — |
 | SurveyForge | [Yan et al. (2025)](https://aclanthology.org/2025.acl-long.609/) | [InternScience/SurveyForge](https://github.com/InternScience/SurveyForge) | [SurveyBench](https://huggingface.co/datasets/InternScience/SurveyBench) · [Paper database](https://huggingface.co/datasets/InternScience/SurveyForge_database) | — |
 | SurveyX | [Liang et al. (2025)](https://arxiv.org/abs/2502.14776) | [IAAR-Shanghai/SurveyX](https://github.com/IAAR-Shanghai/SurveyX) | — | [Generated examples](https://www.surveyx.cn/) |
-| IterSurvey | [Zhang et al. (2025)](https://arxiv.org/abs/2510.21900) | [HancCui/IterSurvey_Autosurveyv2](https://github.com/HancCui/IterSurvey_Autosurveyv2) | — | [Evaluation resources](https://github.com/HancCui/IterSurvey_Autosurveyv2/tree/main/evaluation) |
+| InteractiveSurvey | [Wen et al. (2025)](https://arxiv.org/abs/2504.08762) | [TechnicolorGUO/InteractiveSurvey](https://github.com/TechnicolorGUO/InteractiveSurvey) | — | — |
+
+## System capability comparison
+
+The comparison below records capabilities explicitly documented in the corresponding papers or public implementations.
+
+| System | Corpus | PRep | GTax | LRoute | DPlan | RLoop | DCheck | VInt | CAVis | PDF |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| AutoSurvey | 530K | × | × | × | × | × | × | × | × | × |
+| SurveyForge | 600K + 20K | × | × | × | × | × | × | × | × | × |
+| SurveyX | 2.63M* + online | × | ✓ | × | × | × | × | ✓ | × | ✓ |
+| InteractiveSurvey | online + uploads | × | ✓ | × | × | × | × | ✓ | × | ✓ |
+| LiRA | provided references | × | × | × | × | ✓ | × | × | × | × |
+| DeepSurvey | online | × | ✓ | ✓ | × | ✓ | × | × | × | × |
+| **DAS** | **2M** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+A check mark denotes an explicitly documented capability; a cross denotes an absent or undocumented capability. *SurveyX reports an unreleased 2.63M-paper corpus.
+
+**Legend.** PRep: pre-run structured paper representation; GTax: candidate-literature-aware taxonomy planning; LRoute: LLM-based section-support routing; DPlan: paragraph and claim/citation planning before prose; RLoop: review decisions can trigger regeneration; DCheck: deterministic validation beyond LLM critique; VInt: in-text insertion and verification of visual references; CAVis: content-adaptive visualizations; PDF: automatic compiled-manuscript production.
+
+## Qualitative case study
+
+Representative first and interior pages from Codex, GPT Deep Research, AutoSurvey, InteractiveSurvey, and DAS provide a manuscript-level complement to the aggregate benchmark results.
+
+[Download the original PDF](assets/qualitative_case_study.pdf)
+
+![Qualitative comparison of generated survey artifacts](assets/qualitative_case_study.png)
 
 ## Topics and metadata
 
