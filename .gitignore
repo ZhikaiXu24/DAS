@@ -2,11 +2,7 @@
 ._*
 .upload_artifacts/
 .env
-.env.example
 RELEASE_CHECKLIST.md
-config.json
-requirements.txt
-evaluation/
 examples/
 benchmark/submission_format.md
 __pycache__/

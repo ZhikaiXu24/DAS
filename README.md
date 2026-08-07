@@ -2,7 +2,7 @@
 
 This repository releases the data specification and evaluation protocol for DAS-Bench, a benchmark of automatically generated academic surveys.
 
-The current release does not include survey-generation code, evaluator implementation code, submission-format details, private experiment artifacts, or model outputs.
+The current release includes the benchmark specification and evaluator implementation. It does not include survey-generation code, submission-format documentation, private experiment artifacts, or model outputs.
 
 ## Benchmark task
 
@@ -48,6 +48,26 @@ The following tables link to the official papers, product pages, source reposito
 
 The paper metadata will be distributed separately through Hugging Face and is intentionally not duplicated in this Git repository. The public metadata schema is provided in `benchmark/metadata_schema.json`; dataset provenance and download instructions will be added to `data/README.md` when the dataset release is approved.
 
+## Evaluation code
+
+The `evaluation/` directory provides the four benchmark evaluators and the PDF preprocessing entry point:
+
+- `eval_prepare.py`: prepares Markdown and rendered page images from survey PDFs;
+- `eval_bsc.py`: evaluates Balanced Scholarly Citation Quality;
+- `eval_mar.py`: evaluates Manuscript Artifact Reliability;
+- `eval_tsq_hdq.py`: evaluates Taxonomic Synthesis Quality and Hierarchical Drafting Quality; and
+- `run_eval_all.sh`: runs the evaluation stages serially.
+
+Use Python 3.10 or newer and install the common dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Copy `.env.example` to a local `.env` file or export the required environment variables directly. Configure the hosted or local OpenAI-compatible judge in `config.json`. API credentials must never be committed.
+
+PDF preprocessing uses MinerU to reproduce the benchmark's Markdown extraction. Install MinerU separately and set `PDF_EXTRACT_KIT_ROOT` before running `eval_prepare.py`. All evaluator paths are resolved relative to the repository root.
+
 ## Current release scope
 
 This staged release includes:
@@ -56,9 +76,11 @@ This staged release includes:
 - the benchmark task definition;
 - BSC, MAR, TSQ, and HDQ metric definitions;
 - the public metadata schema; and
-- metadata release notes.
+- metadata release notes;
+- the BSC, MAR, TSQ, and HDQ evaluator implementations; and
+- a safe example configuration and dependency list.
 
-Evaluator code and the formal submission interface are retained privately and will be considered for a later version.
+The survey-generation system and formal submission-format documentation remain private and may be considered for a later version.
 
 ## License and citation
 

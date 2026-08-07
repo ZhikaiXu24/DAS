@@ -1,0 +1,40 @@
+{
+  "llm_api": {
+    "api_mode": "off",
+    "api_on": {
+      "provider": "openai_responses",
+      "base_url": "https://api.openai.com/v1",
+      "api_key": "",
+      "api_key_env": "OPENAI_API_KEY",
+      "model_name": "YOUR_API_JUDGE_MODEL",
+      "timeout": 600,
+      "retries": 3,
+      "retry_sleep_base_seconds": 5,
+      "temperature": 0.2,
+      "max_output_tokens": 4096
+    },
+    "api_off": {
+      "provider": "openai_compatible_chat",
+      "base_url": "http://127.0.0.1:8000/v1",
+      "api_key": "EMPTY",
+      "api_key_env": "LOCAL_LLM_API_KEY",
+      "model_name": "YOUR_LOCAL_JUDGE_MODEL",
+      "timeout": 600,
+      "retries": 3,
+      "retry_sleep_base_seconds": 5,
+      "temperature": 0.2,
+      "max_tokens": 4096,
+      "enable_thinking": false,
+      "pdf_render_dpi": 160,
+      "image_format": "png",
+      "max_image_pages": 100
+    }
+  },
+  "evaluation": {
+    "score_min": 1,
+    "score_max": 5,
+    "language": "en",
+    "require_json_output": true
+  }
+}
+
