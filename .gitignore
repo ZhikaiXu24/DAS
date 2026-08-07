@@ -10,7 +10,9 @@ __pycache__/
 *.py[cod]
 .eval_prepare_tmp/
 eval_cache/
-results/
+results/*
+!results/main_results_30_topics.csv
+!results/main_results_cs21.csv
 eval_inputs/
 data/metadata/
 data/mineru/

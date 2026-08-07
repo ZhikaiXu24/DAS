@@ -1,0 +1,11 @@
+Category,Method,Total_Avg
+Reference,Human,4.38
+Proposed,DAS,4.32
+General,Naive RAG,3.96
+General,Gemini Deep Research,3.93
+Auto Survey Generation,IterSurvey,3.86
+Auto Survey Generation,SurveyForge,3.78
+Auto Survey Generation,AutoSurvey,3.73
+General,GPT Deep Research,3.71
+Auto Survey Generation,LiRA,3.60
+General,Codex,3.18

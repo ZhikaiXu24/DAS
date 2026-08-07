@@ -44,4 +44,13 @@ HDQ evaluates alignment and argument quality across document levels.
 
 The evaluator supports a hosted Responses-style API and a local OpenAI-compatible chat endpoint. API credentials must be supplied through environment variables. Exact model identifiers, endpoint type, temperature, token limits, page-rendering settings, retry policy, and any repeated-run aggregation must accompany reported results.
 
-The evaluator prompts are frozen for the reported experiments but are not part of the current public release. Benchmark results should report BSC, MAR, TSQ, and HDQ separately. A combined score must not be introduced without a versioned protocol update.
+The evaluator prompts are frozen for the reported experiments but are not part of the current public release.
+
+## Aggregation and reporting
+
+For each system, scores are first averaged across the evaluated topics at the criterion level. Each metric-family average is the arithmetic mean of its four criterion scores:
+
+- BSC Avg., MAR Avg., TSQ Avg., and HDQ Avg. each range from 1 to 5.
+- Total Avg. is the unweighted arithmetic mean of all 16 criteria and also ranges from 1 to 5. It is equivalent to the arithmetic mean of the four family averages when computed before display rounding.
+
+Reports must include all four family averages whenever Total Avg. is reported. The evaluated topic set and number of topics must be stated explicitly. Human results, when provided, serve only as a reference and are excluded from system ranking.

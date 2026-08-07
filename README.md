@@ -19,7 +19,45 @@ The benchmark defines four complementary metric families:
 - Taxonomic Synthesis Quality (TSQ)
 - Hierarchical Drafting Quality (HDQ)
 
-Each family contains four dimensions scored from 1 to 5. The benchmark reports the four subtotals independently and does not introduce an undocumented combined score. See `benchmark/evaluation_protocol.md` for the metric definitions.
+Each family contains four dimensions scored from 1 to 5. The benchmark reports the four family averages and a transparent Total Avg., which is the arithmetic mean of all 16 dimensions. See `benchmark/evaluation_protocol.md` for the metric definitions and aggregation rules.
+
+## Benchmark results
+
+All values use a 1--5 scale, and higher is better. Human performance is provided only as a reference and is excluded from system ranking. The complete criterion-level results are available in [`results/main_results_30_topics.csv`](results/main_results_30_topics.csv).
+
+### Full benchmark: 30 topics
+
+| Method | BSC Avg. | TSQ Avg. | HDQ Avg. | MAR Avg. | Total Avg. |
+|---|---:|---:|---:|---:|---:|
+| Human | 3.84 | 4.29 | 4.24 | 5.00 | 4.34 |
+| Codex | 2.80 | 2.99 | 2.75 | 4.19 | 3.18 |
+| GPT Deep Research | 3.32 | 3.48 | 3.76 | 4.14 | 3.68 |
+| Gemini Deep Research | 2.95 | 3.82 | 4.07 | 4.84 | 3.92 |
+| Naive RAG | 3.73 | 4.06 | 4.22 | 4.09 | 4.03 |
+| AutoSurvey | 3.81 | 3.74 | 3.69 | 3.67 | 3.73 |
+| SurveyForge | 3.73 | 3.81 | 3.74 | 3.83 | 3.78 |
+| LiRA | 3.63 | 3.72 | 4.06 | 3.07 | 3.62 |
+| IterSurvey | 2.75 | 3.88 | 3.93 | 4.68 | 3.81 |
+| DAS | **3.85** | **4.22** | **4.28** | **5.00** | **4.34** |
+
+Group averages are the arithmetic means of their four dimensions. Total Avg. is the arithmetic mean of all 16 dimensions, equivalently the mean of the four group averages before display rounding.
+
+### Matched CS subset: 21 topics
+
+This subset contains the 21 computer science topics shared by every evaluated system. It provides a matched comparison under identical topic coverage; it is not a separate benchmark split. The machine-readable results are available in [`results/main_results_cs21.csv`](results/main_results_cs21.csv).
+
+| Method | Total Avg. |
+|---|---:|
+| Human | 4.38 |
+| DAS | **4.32** |
+| Naive RAG | 3.96 |
+| Gemini Deep Research | 3.93 |
+| IterSurvey | 3.86 |
+| SurveyForge | 3.78 |
+| AutoSurvey | 3.73 |
+| GPT Deep Research | 3.71 |
+| LiRA | 3.60 |
+| Codex | 3.18 |
 
 ## Compared systems
 
