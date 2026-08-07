@@ -2,6 +2,7 @@
 ._*
 .upload_artifacts/
 .env
+.env.example
 RELEASE_CHECKLIST.md
 examples/
 benchmark/submission_format.md

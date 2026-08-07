@@ -27,22 +27,21 @@ The following tables link to the official papers, product pages, source reposito
 
 ### General
 
-| Method | Reference | Code | Data or resources |
-|---|---|---|---|
-| Naive RAG | [Lewis et al. (2020)](https://arxiv.org/abs/2005.11401) | — | — |
-| Gemini Deep Research | [Official product page](https://blog.google/products-and-platforms/products/gemini/google-gemini-deep-research/) | — | — |
-| GPT Deep Research | [Official product page](https://openai.com/index/introducing-deep-research/) | — | — |
-| Codex | [Official product page](https://openai.com/codex/get-started/) | [openai/codex](https://github.com/openai/codex) | — |
+| Method | Reference | Code | Datasets | Resources |
+|---|---|---|---|---|
+| Naive RAG | [Lewis et al. (2020)](https://arxiv.org/abs/2005.11401) | — | — | — |
+| Gemini Deep Research | [Official product page](https://blog.google/products-and-platforms/products/gemini/google-gemini-deep-research/) | — | — | — |
+| GPT Deep Research | [Official product page](https://openai.com/index/introducing-deep-research/) | — | — | — |
+| Codex | [Official product page](https://openai.com/codex/get-started/) | [openai/codex](https://github.com/openai/codex) | — | — |
 
 ### Auto Survey Generation
 
-| Method | Reference | Code | Data or resources |
-|---|---|---|---|
-| AutoSurvey | [Wang et al. (2024)](https://arxiv.org/abs/2406.10252) | [AutoSurveys/AutoSurvey](https://github.com/AutoSurveys/AutoSurvey) | [Paper database](https://1drv.ms/u/c/8761b6d10f143944/EaqWZ4_YMLJIjGsEB_qtoHsBoExJ8bdppyBc1uxgijfZBw?e=2EIzti) |
-| SurveyForge | [Yan et al. (2025)](https://aclanthology.org/2025.acl-long.609/) | [InternScience/SurveyForge](https://github.com/InternScience/SurveyForge) | [SurveyBench](https://huggingface.co/datasets/InternScience/SurveyBench) · [Paper database](https://huggingface.co/datasets/InternScience/SurveyForge_database) |
-| SurveyX | [Liang et al. (2025)](https://arxiv.org/abs/2502.14776) | [IAAR-Shanghai/SurveyX](https://github.com/IAAR-Shanghai/SurveyX) | [Generated examples](https://www.surveyx.cn/) |
-| IterSurvey | [Zhang et al. (2025)](https://arxiv.org/abs/2510.21900) | [HancCui/IterSurvey_Autosurveyv2](https://github.com/HancCui/IterSurvey_Autosurveyv2) | [Evaluation resources](https://github.com/HancCui/IterSurvey_Autosurveyv2/tree/main/evaluation) |
-| DAS | Forthcoming | Not released | DAS-Bench metadata on Hugging Face (forthcoming) |
+| Method | Reference | Code | Datasets | Resources |
+|---|---|---|---|---|
+| AutoSurvey | [Wang et al. (2024)](https://arxiv.org/abs/2406.10252) | [AutoSurveys/AutoSurvey](https://github.com/AutoSurveys/AutoSurvey) | [Paper database](https://1drv.ms/u/c/8761b6d10f143944/EaqWZ4_YMLJIjGsEB_qtoHsBoExJ8bdppyBc1uxgijfZBw?e=2EIzti) | — |
+| SurveyForge | [Yan et al. (2025)](https://aclanthology.org/2025.acl-long.609/) | [InternScience/SurveyForge](https://github.com/InternScience/SurveyForge) | [SurveyBench](https://huggingface.co/datasets/InternScience/SurveyBench) · [Paper database](https://huggingface.co/datasets/InternScience/SurveyForge_database) | — |
+| SurveyX | [Liang et al. (2025)](https://arxiv.org/abs/2502.14776) | [IAAR-Shanghai/SurveyX](https://github.com/IAAR-Shanghai/SurveyX) | — | [Generated examples](https://www.surveyx.cn/) |
+| IterSurvey | [Zhang et al. (2025)](https://arxiv.org/abs/2510.21900) | [HancCui/IterSurvey_Autosurveyv2](https://github.com/HancCui/IterSurvey_Autosurveyv2) | — | [Evaluation resources](https://github.com/HancCui/IterSurvey_Autosurveyv2/tree/main/evaluation) |
 
 ## Topics and metadata
 
@@ -64,7 +63,7 @@ Use Python 3.10 or newer and install the common dependencies:
 python -m pip install -r requirements.txt
 ```
 
-Copy `.env.example` to a local `.env` file or export the required environment variables directly. Configure the hosted or local OpenAI-compatible judge in `config.json`. API credentials must never be committed.
+Configure the hosted or local OpenAI-compatible judge in `config.json`, then export the required credentials directly in the shell. Use `OPENAI_API_KEY` for the hosted judge and `LOCAL_LLM_API_KEY` only when the local endpoint requires authentication. API credentials must never be committed.
 
 PDF preprocessing uses MinerU to reproduce the benchmark's Markdown extraction. Install MinerU separately and set `PDF_EXTRACT_KIT_ROOT` before running `eval_prepare.py`. All evaluator paths are resolved relative to the repository root.
 
@@ -78,7 +77,7 @@ This staged release includes:
 - the public metadata schema; and
 - metadata release notes;
 - the BSC, MAR, TSQ, and HDQ evaluator implementations; and
-- a safe example configuration and dependency list.
+- a safe placeholder configuration and dependency list.
 
 The survey-generation system and formal submission-format documentation remain private and may be considered for a later version.
 
