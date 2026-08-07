@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Survey benchmark paper metadata",
+  "type": "object",
+  "required": ["basic_info"],
+  "properties": {
+    "basic_info": {
+      "type": "object",
+      "required": ["title"],
+      "properties": {
+        "arxiv_id": {"type": "string"},
+        "title": {"type": "string"},
+        "authors": {"type": "array", "items": {"type": "string"}},
+        "publication_year": {"type": ["integer", "null"]},
+        "publication_date": {"type": ["string", "null"]},
+        "abstract": {"type": ["string", "null"]},
+        "file_path": {"type": ["string", "null"], "description": "Must be empty in the public metadata release."}
+      }
+    },
+    "categorization": {"type": "object"},
+    "technical_attributes": {"type": "object"},
+    "resource_info": {"type": "object"},
+    "method_details": {"type": "object"},
+    "dataset_info": {"type": "object"},
+    "research_logic": {"type": "object"},
+    "evaluation": {"type": "object"}
+  },
+  "additionalProperties": true
+}
+
