@@ -2,28 +2,31 @@
   <title id="title">Deep Academic Survey</title>
   <desc id="desc">DAS branding and positioning statement followed by the full paper title.</desc>
   <defs>
-    <linearGradient id="publicationGradient" gradientUnits="userSpaceOnUse" x1="560" y1="0" x2="770" y2="0">
+    <linearGradient id="publicationGradient" gradientUnits="userSpaceOnUse" x1="600" y1="0" x2="900" y2="0">
       <stop offset="0%" stop-color="#59CCFF" />
       <stop offset="52%" stop-color="#B750F0" />
       <stop offset="100%" stop-color="#FF950D" />
     </linearGradient>
-    <linearGradient id="dividerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="dividerGradient" gradientUnits="userSpaceOnUse" x1="150" y1="0" x2="1305" y2="0">
       <stop offset="0%" stop-color="#59CCFF" stop-opacity="0" />
-      <stop offset="24%" stop-color="#59CCFF" />
+      <stop offset="18%" stop-color="#59CCFF" />
       <stop offset="52%" stop-color="#B750F0" />
-      <stop offset="80%" stop-color="#FF950D" />
+      <stop offset="82%" stop-color="#FF950D" />
       <stop offset="100%" stop-color="#FF950D" stop-opacity="0" />
     </linearGradient>
   </defs>
   <rect width="1455" height="320" fill="#FFFFFF" />
-  <text x="645" y="62" font-family="Inter, Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="1.5">
-    <tspan fill="#59CCFF">D</tspan><tspan fill="#B750F0">A</tspan><tspan fill="#FF950D">S</tspan>
-  </text>
-  <text x="340" y="104" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20" font-weight="400" letter-spacing="-0.15">
+  <g font-family="Inter, Arial, Helvetica, sans-serif" font-size="72" font-weight="800">
+    <text x="669" y="78" text-anchor="middle" fill="#59CCFF">D</text>
+    <text x="727.5" y="78" text-anchor="middle" fill="#B750F0">A</text>
+    <text x="786" y="78" text-anchor="middle" fill="#FF950D">S</text>
+  </g>
+  <text x="340" y="128" font-family="Inter, Arial, Helvetica, sans-serif" font-size="26" font-weight="400" letter-spacing="-0.2">
     <tspan fill="#6B7280">The first framework for </tspan><tspan fill="url(#publicationGradient)" font-weight="700">publication-oriented</tspan><tspan fill="#6B7280"> academic survey generation.</tspan>
   </text>
-  <line x1="180" y1="142" x2="1275" y2="142" stroke="url(#dividerGradient)" stroke-width="2" />
-  <circle cx="727.5" cy="142" r="4" fill="#B750F0" />
-  <text x="727.5" y="214" text-anchor="middle" fill="#202734" font-family="Inter, Arial, Helvetica, sans-serif" font-size="48" font-weight="750" letter-spacing="-1">Deep Academic Survey:</text>
-  <text x="727.5" y="270" text-anchor="middle" fill="#374151" font-family="Inter, Arial, Helvetica, sans-serif" font-size="32" font-weight="550" letter-spacing="-0.45">Stateful Agentic Closed-Loop Paradigm for Academic Survey Automation</text>
+  <line x1="150" y1="166" x2="1305" y2="166" stroke="url(#dividerGradient)" stroke-width="3" />
+  <text x="405" y="238" font-family="Inter, Arial, Helvetica, sans-serif" font-size="64" font-weight="800" letter-spacing="-1.5">
+    <tspan fill="#59CCFF">D</tspan><tspan fill="#202734">eep </tspan><tspan fill="#B750F0">A</tspan><tspan fill="#202734">cademic </tspan><tspan fill="#FF950D">S</tspan><tspan fill="#202734">urvey:</tspan>
+  </text>
+  <text x="727.5" y="296" text-anchor="middle" fill="#374151" font-family="Inter, Arial, Helvetica, sans-serif" font-size="40" font-weight="650" letter-spacing="-0.7">Stateful Agentic Closed-Loop Paradigm for Academic Survey Automation</text>
 </svg>
