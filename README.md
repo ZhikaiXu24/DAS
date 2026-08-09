@@ -8,9 +8,8 @@
 <sup>*</sup>Equal contribution &nbsp;&nbsp; <sup>†</sup>Corresponding author
 
 <img src="https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white" alt="arXiv Paper" />
-<img src="https://img.shields.io/badge/PDF-Paper-59CCFF?logo=adobeacrobatreader&logoColor=white" alt="PDF" />
-<img src="https://img.shields.io/badge/Hugging_Face-DAS--2M-FF950D?logo=huggingface&logoColor=white" alt="Hugging Face DAS-2M" />
-<img src="https://img.shields.io/badge/DAS-Website-B750F0?logo=googlechrome&logoColor=white" alt="DAS Website" />
+<img src="https://img.shields.io/badge/Hugging_Face-DAS--2M-FF950D?logo=huggingface&logoColor=white&labelColor=FF950D" alt="Hugging Face DAS-2M" />
+<img src="https://img.shields.io/badge/DAS-Website-B750F0?logo=googlechrome&logoColor=white&labelColor=B750F0" alt="DAS Website" />
 
 [Overview](#-overview) · [Release](#-release) · [Method](#-method) · [DAS-2M](#-das-2m) · [DAS-Bench](#-das-bench) · [Installation](#-installation) · [Citation](#-citation)
 
@@ -26,7 +25,7 @@ The resource badges above are placeholders and will be activated as the correspo
 
 ## 🔭 Overview
 
-Academic survey generation requires more than retrieving papers and drafting long-form text. A publication-oriented survey must organize literature coherently, maintain traceable claim-level support, integrate figures and tables, and remain structurally valid as a complete manuscript. **Deep Academic Survey (DAS)** formulates this process as stateful manuscript construction: reusable paper understanding is separated from topic-specific organization, drafting, review, and finalization.
+Academic survey generation requires more than retrieving papers and drafting long-form text. **DAS** is The first framework for **publication-oriented** academic survey generation. A publication-oriented survey must organize literature coherently, maintain traceable claim-level support, integrate figures and tables, and remain structurally valid as a complete manuscript. **Deep Academic Survey (DAS)** formulates this process as stateful manuscript construction: reusable paper understanding is separated from topic-specific organization, drafting, review, and finalization.
 
 <p align="center">
   <img src="assets/das_teaser.png" width="700" alt="Comparison between existing research systems and DAS" />
