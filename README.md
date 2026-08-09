@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="assets/das_logo.svg" width="860" alt="DAS: Deep Academic Survey" />
-
-### Stateful Agentic Closed-Loop Paradigm for Academic Survey Automation
+<img src="assets/das_logo.svg" width="100%" alt="Deep Academic Survey: The first framework for publication-oriented academic survey generation." />
 
 [Zhikai Xu](https://github.com/ZhikaiXu24)<sup>1,*</sup> · [Zhucun Xue](https://scholar.google.com/citations?hl=zh-CN&user=m3KDreEAAAAJ)<sup>1,*</sup> · [Teng Hu](https://sjtuplayer.github.io/)<sup>2</sup> · [Yabiao Wang](https://scholar.google.com.hk/citations?hl=zh-CN&user=xiK4nFUAAAAJ)<sup>1</sup> · [Yong Liu](https://scholar.google.com/citations?user=qYcgBbEAAAAJ)<sup>1</sup> · [Jiangning Zhang](https://zhangzjn.github.io/)<sup>1,†</sup>
 

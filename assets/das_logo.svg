@@ -1,17 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
-  <title id="title">DAS: Deep Academic Survey</title>
-  <desc id="desc">DAS letters in blue, violet, and orange with the project name and tagline.</desc>
-  <style>
-    .name { fill: #1f2937; }
-    .tagline { fill: #6b7280; }
-    @media (prefers-color-scheme: dark) {
-      .name { fill: #f3f4f6; }
-      .tagline { fill: #d1d5db; }
-    }
-  </style>
-  <text x="600" y="78" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="82" font-weight="800" letter-spacing="4">
-    <tspan fill="#59CCFF">D</tspan><tspan fill="#B750F0">A</tspan><tspan fill="#FF950D">S</tspan>
+<svg xmlns="http://www.w3.org/2000/svg" width="1455" height="250" viewBox="0 0 1455 250" role="img" aria-labelledby="title desc">
+  <title id="title">Deep Academic Survey</title>
+  <desc id="desc">Deep Academic Survey and its publication-oriented academic survey generation tagline.</desc>
+  <defs>
+    <linearGradient id="publicationGradient" gradientUnits="userSpaceOnUse" x1="250" y1="0" x2="465" y2="0">
+      <stop offset="0%" stop-color="#59CCFF" />
+      <stop offset="52%" stop-color="#B750F0" />
+      <stop offset="100%" stop-color="#FF950D" />
+    </linearGradient>
+    <linearGradient id="backgroundGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#111722" />
+      <stop offset="50%" stop-color="#0b0910" />
+      <stop offset="100%" stop-color="#070807" />
+    </linearGradient>
+  </defs>
+  <rect width="1455" height="250" fill="url(#backgroundGlow)" />
+  <g opacity="0.13" stroke="#667085" stroke-width="1">
+    <path d="M140 0V250M280 0V250M420 0V250M560 0V250M700 0V250M840 0V250M980 0V250M1120 0V250M1260 0V250M1400 0V250" />
+  </g>
+  <text x="50" y="122" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" letter-spacing="-1.8">
+    <tspan fill="#59CCFF">D</tspan><tspan fill="#F7F7FA">eep </tspan><tspan fill="#B750F0">A</tspan><tspan fill="#F7F7FA">cademic </tspan><tspan fill="#FF950D">S</tspan><tspan fill="#F7F7FA">urvey:</tspan>
   </text>
-  <text x="600" y="130" text-anchor="middle" class="name" font-family="Inter, Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Deep Academic Survey</text>
-  <text x="600" y="168" text-anchor="middle" class="tagline" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20">Publication-Oriented Academic Survey Automation</text>
+  <text x="40" y="195" font-family="Inter, Arial, Helvetica, sans-serif" font-size="21" font-weight="400" letter-spacing="-0.2">
+    <tspan fill="#B8B8C0">The first framework for </tspan><tspan fill="url(#publicationGradient)" font-weight="700">publication-oriented</tspan><tspan fill="#B8B8C0"> academic survey generation.</tspan>
+  </text>
 </svg>
