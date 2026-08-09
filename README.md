@@ -25,7 +25,7 @@ The resource badges above are placeholders and will be activated as the correspo
 
 ## 🔭 Overview
 
-Academic survey generation requires more than retrieving papers and drafting long-form text. **DAS** is The first framework for **publication-oriented** academic survey generation. A publication-oriented survey must organize literature coherently, maintain traceable claim-level support, integrate figures and tables, and remain structurally valid as a complete manuscript. **Deep Academic Survey (DAS)** formulates this process as stateful manuscript construction: reusable paper understanding is separated from topic-specific organization, drafting, review, and finalization.
+Academic survey generation requires more than retrieving papers and drafting long-form text. **Deep Academic Survey (DAS)** is the first framework for **publication-oriented academic survey generation**, designed to construct **complete, evidence-grounded survey manuscripts**. A publication-oriented survey must ensure **coherent literature organization**, **traceable claim-level support**, **integrated figures and tables**, and **manuscript-level structural completeness**. To achieve this, DAS formulates survey generation as **stateful manuscript construction**, separating reusable paper understanding from topic-specific **organization, drafting, review, and finalization**.
 
 <p align="center">
   <img src="assets/das_teaser.png" width="700" alt="Comparison between existing research systems and DAS" />
