@@ -29,7 +29,7 @@ The resource badges above are placeholders and will be activated as the correspo
 Academic survey generation requires more than retrieving papers and drafting long-form text. A publication-oriented survey must organize literature coherently, maintain traceable claim-level support, integrate figures and tables, and remain structurally valid as a complete manuscript. **Deep Academic Survey (DAS)** formulates this process as stateful manuscript construction: reusable paper understanding is separated from topic-specific organization, drafting, review, and finalization.
 
 <p align="center">
-  <img src="assets/das_teaser.png" width="760" alt="Comparison between existing research systems and DAS" />
+  <img src="assets/das_teaser.png" width="700" alt="Comparison between existing research systems and DAS" />
 </p>
 
 ## 💡 Highlights
@@ -60,7 +60,7 @@ DAS maintains a shared manuscript state across four coordinated stages: literatu
 1. **Evolving literature metadata lake:** full papers are converted into reusable survey-oriented representations and indexed for lexical and semantic discovery.
 2. **Candidate-grounded taxonomy and routing:** candidate papers jointly inform the taxonomy, and papers are routed to sections according to substantive support.
 3. **Hierarchical planning and drafting:** section objectives are refined into paragraph responsibilities, technical claims, and citation groups before prose generation.
-4. **Review and finalization:** scoped semantic actions repair the affected state, deterministic rules validate artifacts, and the accepted manuscript is compiled with its references and visual elements.
+4. **Review and finalization:** semantic critiques trigger scoped rollback to the affected section or paragraph, where planning or drafting is revised and then reviewed again. This closed loop continues until the content is accepted; deterministic checks then validate the artifacts before the manuscript is compiled with its references and visual elements.
 
 ## 🗃️ DAS-2M
 
