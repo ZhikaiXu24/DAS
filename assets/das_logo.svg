@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">DAS: Deep Academic Survey</title>
+  <desc id="desc">DAS letters in blue, violet, and orange with the project name and tagline.</desc>
+  <style>
+    .name { fill: #1f2937; }
+    .tagline { fill: #6b7280; }
+    @media (prefers-color-scheme: dark) {
+      .name { fill: #f3f4f6; }
+      .tagline { fill: #d1d5db; }
+    }
+  </style>
+  <text x="600" y="78" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="82" font-weight="800" letter-spacing="4">
+    <tspan fill="#59CCFF">D</tspan><tspan fill="#B750F0">A</tspan><tspan fill="#FF950D">S</tspan>
+  </text>
+  <text x="600" y="130" text-anchor="middle" class="name" font-family="Inter, Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Deep Academic Survey</text>
+  <text x="600" y="168" text-anchor="middle" class="tagline" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20">Publication-Oriented Academic Survey Automation</text>
+</svg>
