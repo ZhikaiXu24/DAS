@@ -21,22 +21,21 @@
 - ✅ **[2026-08-08]** DAS-Bench and its evaluation toolkit were released.
 - ⏳ **DAS method code:** To be released.
 
-The resource badges above are placeholders and will be activated as the corresponding public pages become available.
+The arXiv badge will be activated when the public paper link becomes available.
 
 ## 🔭 Overview
 
-Academic survey generation requires more than retrieving papers and drafting long-form text. **Deep Academic Survey (DAS)** is the first framework for **publication-oriented academic survey generation**, designed to construct **complete, evidence-grounded survey manuscripts**. A publication-oriented survey must ensure **coherent literature organization**, **traceable claim-level support**, **integrated figures and tables**, and **manuscript-level structural completeness**. To achieve this, DAS formulates survey generation as **stateful manuscript construction**, separating reusable paper understanding from topic-specific **organization, drafting, review, and finalization**.
+**Deep Academic Survey (DAS)** is the first framework for **publication-oriented academic survey generation**, designed to construct survey manuscripts with **structural completeness, traceable literature support, coherent organization across taxonomy, section, and paragraph levels, integrated visual elements, and consistency among final manuscript artifacts**. To achieve this, DAS formulates survey generation as **stateful manuscript construction**, separating reusable paper understanding maintained in a dynamically updated literature metadata lake from topic-specific **organization, drafting, review, and finalization**.
 
 <p align="center">
   <img src="assets/das_teaser.png" width="700" alt="Comparison between existing research systems and DAS" />
 </p>
 
-## 💡 Highlights
+## ✨ Highlights
 
-- **DAS-2M:** a dynamically updated literature metadata lake with survey-oriented representations of approximately two million papers.
-- **Stateful agentic construction:** explicit literature, organization, writing, and finalization states connect candidate discovery to the final manuscript.
-- **Scoped closed-loop review:** semantic feedback reactivates the affected writing stage, while deterministic checks protect structural integrity and compilability.
-- **DAS-Bench and DAS-Eval:** a 30-topic benchmark and a 16-criterion evaluation suite for scholarly citation quality, taxonomic synthesis, hierarchical discourse, and manuscript reliability.
+- **DAS:** A stateful agentic framework for **publication-oriented academic survey generation**, connecting literature discovery, organization, citation-grounded writing, closed-loop review, and manuscript finalization in one end-to-end workflow.
+- **DAS-2M:** A persistent and dynamically updated literature metadata lake that provides reusable, **survey-oriented representations** of approximately **2 million papers**.
+- **DAS-Bench:** A **30-topic multi-domain benchmark** for academic survey generation, paired with **DAS-Eval**, a 16-criterion evaluation suite designed specifically for **publication-oriented academic surveys**, covering scholarly citation, taxonomic synthesis, hierarchical discourse, and manuscript reliability.
 
 ## 📦 Release
 
@@ -44,37 +43,39 @@ Academic survey generation requires more than retrieving papers and drafting lon
 |---|---|---|
 | [`DAS/`](DAS/) | ⏳ To be released | Core DAS method implementation and generation pipeline. |
 | [`DAS-Bench/`](DAS-Bench/) | ✅ Released | Benchmark specification, topics, evaluation code, results, and qualitative materials. |
-| DAS-2M | ✅ Released | Survey-oriented scholarly metadata distributed separately through Hugging Face. |
+| DAS-2M | ✅ Released | Persistent and dynamically updated literature metadata lake distributed through Hugging Face. |
 
 Large metadata records are hosted separately and are not duplicated in this Git repository.
 
 ## 🧭 Method
 
-DAS maintains a shared manuscript state across four coordinated stages: literature discovery, candidate-grounded taxonomy and paper routing, hierarchical claim-and-citation planning with drafting, and scoped review followed by artifact finalization.
+**DAS performs stateful agentic construction over a shared manuscript state**, coordinating literature discovery, candidate-grounded literature organization, hierarchical planning and drafting, scoped semantic review and repair, and manuscript finalization. When review identifies a defect, DAS reactivates only the affected writing states and re-executes the dependent agentic steps, forming a **scoped agentic review-and-repair loop**.
 
 <p align="center">
   <img src="assets/das_overview.png" width="100%" alt="Overview of the DAS framework" />
 </p>
 
-1. **Evolving literature metadata lake:** full papers are converted into reusable survey-oriented representations and indexed for lexical and semantic discovery.
-2. **Candidate-grounded taxonomy and routing:** candidate papers jointly inform the taxonomy, and papers are routed to sections according to substantive support.
-3. **Hierarchical planning and drafting:** section objectives are refined into paragraph responsibilities, technical claims, and citation groups before prose generation.
-4. **Review and finalization:** semantic critiques trigger scoped rollback to the affected section or paragraph, where planning or drafting is revised and then reviewed again. This closed loop continues until the content is accepted; deterministic checks then validate the artifacts before the manuscript is compiled with its references and visual elements.
+1. **Evolving literature metadata lake:** Full papers are parsed and converted by an LLM-based extractor into reusable **survey-oriented paper representations**. Lexical and semantic indexes over these representations support hybrid candidate discovery, while dynamic updates allow DAS to incorporate newly available literature.
+2. **Candidate-grounded taxonomy and routing:** The **Query Planner agent** generates complementary lexical and semantic queries to discover candidate papers. The **Taxonomy Planner agent** organizes their structured representations into a candidate-grounded taxonomy, and the **Paper Router agent** performs reverse paper-to-section routing to establish section-level citation scopes for subsequent drafting.
+3. **Hierarchical planning and drafting:** For each taxonomy node, the **Paragraph Planner agent** constructs paragraph plans with paragraph-level paper assignments. The **Claim Planner agent** further organizes each paragraph into writing points with intended claims, supporting citation groups, and technical details, after which the **Drafter agent** generates paragraph candidates that must pass **deterministic validation** before entering the shared writing state.
+4. **Scoped semantic review and manuscript finalization:** The **Reviewer agent** evaluates each assembled subsection and adaptively selects among acceptance, direct paragraph revision, paragraph replanning, or subsection replanning. The affected writing state is repaired, reassembled, and evaluated again, forming a **scoped agentic review-and-repair loop** that continues until acceptance or the retry budget is exhausted. Accepted content then enters finalization, where content-adaptive figures and tables, bibliographic records, cross-references, LaTeX, BibTeX, and assets are assembled into the final survey manuscript.
 
-## 🗃️ DAS-2M
+## 🌊 DAS-2M
 
-DAS-2M contains survey-oriented representations of approximately two million arXiv papers submitted between January 2020 and June 2026. Each representation organizes bibliographic metadata, topical categorization, technical configuration, resources, methods, datasets, findings, empirical results, and limitations. The same processing and indexing pipeline supports continued updates as new papers become available.
+DAS-2M is a persistent and dynamically updated literature metadata lake containing reusable, survey-oriented representations of approximately 2 million arXiv papers submitted between January 2020 and June 2026. Each representation is organized into eight high-level field groups: bibliographic metadata, topical categorization, technical configuration, resource availability, methodological details, dataset usage, research rationale and findings, and empirical evaluation and limitations. Lexical and semantic indexes over the extracted metadata support hybrid candidate discovery, while the same processing pipeline dynamically incorporates newly available papers.
 
-The Hugging Face dataset page and download command will be linked from the badge at the top of this page.
+DAS-2M is publicly available on 🤗 [Hugging Face](https://huggingface.co/datasets/ZhikaiXu24/DAS-2M).
 
 ## 📊 DAS-Bench
 
-DAS-Bench evaluates publication-oriented academic surveys on 30 topics: 21 core computer science topics and nine non-CS topics. DAS-Eval contains four metric families, each with four criteria scored from 1 to 5:
+DAS-Bench contains 30 survey topics, comprising 21 core computer science topics and nine non-CS topics. DAS-Eval evaluates publication-oriented academic surveys along four dimensions, each containing four criteria scored from 1 to 5:
 
-- **BSC:** Balanced Scholarly Citation Quality;
-- **TSQ:** Taxonomic Synthesis Quality;
-- **HDQ:** Hierarchical Discourse Quality; and
-- **MAR:** Manuscript Assembly Reliability.
+- **BSC — Balanced Scholarly Citation Quality:** citation grounding and distribution.
+- **TSQ — Taxonomic Synthesis Quality:** literature coverage and global organization.
+- **HDQ — Hierarchical Discourse Quality:** argumentation across sections and paragraphs.
+- **MAR — Manuscript Assembly Reliability:** reference integrity, visual integration, layout, and component completeness.
+
+The overall score is the mean of all 16 criteria. Multimodal LLM judges evaluate rendered manuscripts together with structured citation metadata, while domain experts independently rank method-blinded manuscripts.
 
 ### Main comparison
 
@@ -91,9 +92,13 @@ DAS-Bench evaluates publication-oriented academic surveys on 30 topics: 21 core 
 | InteractiveSurvey | 2.75 | 3.88 | 3.93 | 4.68 | 3.81 |
 | **DAS** | **3.85** | **4.22** | **4.28** | **5.00** | **4.34** |
 
-The main comparison follows each system's supported topic coverage. See the [DAS-Bench documentation](DAS-Bench/) for the matched 21-topic CS comparison, criterion-level CSV files, complete metric definitions, and evaluation protocol.
+Among the systems evaluated on all 30 topics, **DAS achieves the highest group averages in BSC, TSQ, HDQ, and MAR**, yielding a Total Avg. of **4.34**, compared with **4.03** for Naive RAG. AutoSurvey and SurveyForge are evaluated on the 21 CS topics supported by their original corpora, whereas the remaining completed systems are evaluated on all 30 topics. The Human row contains one publicly available academic survey matched to each DAS-Bench topic and is reported for reference only.
+
+For comparison under identical topic coverage, see the existing [DAS-Bench documentation](DAS-Bench/) for the matched 21-topic CS comparison, criterion-level CSV files, complete metric definitions, and evaluation protocol.
 
 ### Capability comparison
+
+The following comparison summarizes DAS and representative automated survey generation systems in terms of their documented capabilities.
 
 | System | Corpus | PRep | GTax | LRoute | DPlan | RLoop | DCheck | VInt | CAVis | PDF |
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -109,13 +114,25 @@ A check mark denotes an explicitly documented capability; a cross denotes an abs
 
 ### Qualitative manuscript comparison
 
-Representative first and interior pages from Codex, GPT Deep Research, AutoSurvey, InteractiveSurvey, and DAS complement the aggregate scores with manuscript-level evidence.
+Representative first-page and interior-page views from Codex, GPT Deep Research, AutoSurvey, InteractiveSurvey, and DAS illustrate manuscript-level differences that are not fully captured by aggregate scores. Across the displayed baseline examples, the annotations identify citation stacking, repeated citation bundles, coarse claim-to-reference attribution, duplicated headings, unsupported historical or capability statements, and weak coupling between figures, equations, and the surrounding discussion. For the same topic, the DAS example maintains closer alignment among the taxonomy, section-level organization, claim-level citations, mathematical formulations, content-adaptive visualizations, and structured comparisons across papers.
 
 <p align="center">
   <a href="DAS-Bench/assets/qualitative_case_study.pdf">
     <img src="DAS-Bench/assets/qualitative_case_study.png" width="100%" alt="Qualitative comparison of generated survey manuscripts" />
   </a>
 </p>
+
+For complete generated manuscripts and additional qualitative comparisons, see the [project page](https://zhikaixu24.github.io/projects/DAS/).
+
+### Additional experimental evidence
+
+| Evidence | Result |
+|---|---|
+| **Core ablations** | Reverse paper-to-section routing and semantic review provide the most consistent gains across DAS-Eval dimensions. Full DAS compiles all **30/30** manuscripts, compared with **27/30** without deterministic validation. |
+| **Scoped review and repair** | The full adaptive repair policy achieves a **74.59% Review Pass Rate** with an average review-and-repair cost of **0.79M tokens per survey**, balancing review success and repair cost by matching the repair scope to the detected defect. |
+| **Expert evaluation** | Under majority voting, DAS is preferred to Naive RAG on **27/30 topics** and to AutoSurvey on **19/21 shared CS topics**, ranking first on **18/21** of these shared topics. |
+
+Full ablation results, repair-policy analysis, backbone sensitivity experiments, and judge-robustness results are provided in the paper and accompanying [DAS-Bench documentation](DAS-Bench/).
 
 ## 🔨 Installation
 
@@ -164,4 +181,10 @@ The code and documentation in this repository are released under the [Apache Lic
 
 ## ✉️ Contact
 
-For questions about DAS, please contact `186368@zju.edu.cn`.
+```text
+zhikai.xu24@zju.edu.cn
+```
+
+```text
+186368@zju.edu.cn
+```
