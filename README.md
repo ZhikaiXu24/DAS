@@ -9,7 +9,7 @@
 
 <img src="https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white" alt="arXiv Paper" />
 <a href="https://huggingface.co/datasets/ZhikaiXu24/DAS-2M"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-DAS--2M-FF950D" alt="Hugging Face DAS-2M" /></a>
-<a href="https://github.com/ZhikaiXu24/ZhikaiXu24.github.io"><img src="https://img.shields.io/badge/%F0%9F%8C%90_DAS-Website-B750F0" alt="DAS Website" /></a>
+<a href="https://zhikaixu24.github.io/projects/DAS/"><img src="https://img.shields.io/badge/%F0%9F%8C%90_DAS-Website-B750F0" alt="DAS Website" /></a>
 
 [Overview](#-overview) · [Release](#-release) · [Method](#-method) · [DAS-2M](#-das-2m) · [DAS-Bench](#-das-bench) · [Installation](#-installation) · [Citation](#-citation)
 
