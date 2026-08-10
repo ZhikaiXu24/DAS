@@ -43,9 +43,7 @@ The arXiv badge will be activated when the public paper link becomes available.
 |---|---|---|
 | [`DAS/`](DAS/) | ⏳ To be released | Core DAS method implementation and generation pipeline. |
 | [`DAS-Bench/`](DAS-Bench/) | ✅ Released | Benchmark specification, topics, evaluation code, results, and qualitative materials. |
-| DAS-2M | ✅ Released | Persistent and dynamically updated literature metadata lake distributed through Hugging Face. |
-
-Large metadata records are hosted separately and are not duplicated in this Git repository.
+| [DAS-2M](https://huggingface.co/datasets/ZhikaiXu24/DAS-2M) | ✅ Released | Persistent and dynamically updated literature metadata lake distributed through Hugging Face. |
 
 ## 🧭 Method
 
