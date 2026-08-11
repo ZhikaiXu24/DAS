@@ -11,7 +11,7 @@
 <a href="https://huggingface.co/datasets/ZhikaiXu24/DAS-2M"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-DAS--2M-FF950D" alt="Hugging Face DAS-2M" /></a>
 <a href="https://zhikaixu24.github.io/projects/DAS/"><img src="https://img.shields.io/badge/%F0%9F%8C%90_DAS-Website-B750F0" alt="DAS Website" /></a>
 
-[Overview](#-overview) · [Release](#-release) · [Method](#-method) · [DAS-2M](#-das-2m) · [DAS-Bench](#-das-bench) · [Installation](#-installation) · [Citation](#-citation)
+[Overview](#-overview) · [Release](#-release) · [DAS-Method](#-das-method) · [DAS-2M](#-das-2m) · [DAS-Bench](#-das-bench) · [Installation](#-installation) · [Citation](#-citation)
 
 </div>
 
@@ -45,7 +45,7 @@ The arXiv badge will be activated when the public paper link becomes available.
 | [`DAS-Bench/`](DAS-Bench/) | ✅ Released | Benchmark specification, topics, evaluation code, results, and qualitative materials. |
 | [DAS-2M](https://huggingface.co/datasets/ZhikaiXu24/DAS-2M) | ✅ Released | Persistent and dynamically updated literature metadata lake distributed through Hugging Face. |
 
-## 🧭 Method
+## 🧭 DAS-Method
 
 **DAS performs stateful agentic construction over a shared manuscript state**, coordinating literature discovery, candidate-grounded literature organization, hierarchical planning and drafting, scoped semantic review and repair, and manuscript finalization. When review identifies a defect, DAS reactivates only the affected writing states and re-executes the dependent agentic steps, forming a **scoped agentic review-and-repair loop**.
 
