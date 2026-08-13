@@ -4,7 +4,6 @@
 .env
 .env.example
 RELEASE_CHECKLIST.md
-examples/
 DAS-Bench/benchmark/submission_format.md
 __pycache__/
 *.py[cod]
