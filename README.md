@@ -82,18 +82,18 @@ DAS has released **220 complete survey manuscripts** across ten research directi
 
 <table>
   <tr>
-    <td width="20%" align="center" valign="middle"><a href="examples/1_Foundation%20Model/README.md"><strong>📁 Foundation Model</strong><br /><sub>001-020</sub></a></td>
-    <td width="20%" align="center" valign="middle"><a href="examples/2_Vision%20Foundation%20Model/README.md"><strong>📁 Vision Foundation Model</strong><br /><sub>021-045</sub></a></td>
-    <td width="20%" align="center" valign="middle"><a href="examples/3_Multimodal%20Large%20Models/README.md"><strong>📁 Multimodal Large Models</strong><br /><sub>046-075</sub></a></td>
-    <td width="20%" align="center" valign="middle"><a href="examples/4_Generative%20AI/README.md"><strong>📁 Generative AI / Diffusion / Video Generation</strong><br /><sub>076-100</sub></a></td>
-    <td width="20%" align="center" valign="middle"><a href="examples/5_3D%20Spatial%20Intelligence/README.md"><strong>📁 3D / Spatial Intelligence</strong><br /><sub>101-125</sub></a></td>
+    <td width="20%" align="center" valign="middle"><a href="examples/1_Foundation%20Model/README.md"><strong>📁 Foundation Model</strong></a><br /><sub>001-020</sub></td>
+    <td width="20%" align="center" valign="middle"><a href="examples/2_Vision%20Foundation%20Model/README.md"><strong>📁 Vision Foundation Model</strong></a><br /><sub>021-045</sub></td>
+    <td width="20%" align="center" valign="middle"><a href="examples/3_Multimodal%20Large%20Models/README.md"><strong>📁 Multimodal Large Models</strong></a><br /><sub>046-075</sub></td>
+    <td width="20%" align="center" valign="middle"><a href="examples/4_Generative%20AI/README.md"><strong>📁 Generative AI / Diffusion / Video Generation</strong></a><br /><sub>076-100</sub></td>
+    <td width="20%" align="center" valign="middle"><a href="examples/5_3D%20Spatial%20Intelligence/README.md"><strong>📁 3D / Spatial Intelligence</strong></a><br /><sub>101-125</sub></td>
   </tr>
   <tr>
-    <td width="20%" align="center" valign="middle"><a href="examples/6_Embodied%20AI%20Robotics/README.md"><strong>📁 Embodied AI / Robotics</strong><br /><sub>126-160</sub></a></td>
-    <td width="20%" align="center" valign="middle"><a href="examples/7_AI%20Agent%20Reasoning/README.md"><strong>📁 AI Agent / Reasoning</strong><br /><sub>161-180</sub></a></td>
-    <td width="20%" align="center" valign="middle"><a href="examples/8_Data-centric%20AI/README.md"><strong>📁 Data-centric AI</strong><br /><sub>181-195</sub></a></td>
-    <td width="20%" align="center" valign="middle"><a href="examples/9_Emerging%20Cross-disciplinary%20Topics/README.md"><strong>📁 Emerging Cross-disciplinary Topics</strong><br /><sub>196-200</sub></a></td>
-    <td width="20%" align="center" valign="middle"><a href="examples/TOP_Popularity/README.md"><strong>📁 Top 20 High-Potential Topics</strong><br /><sub>201-220</sub></a></td>
+    <td width="20%" align="center" valign="middle"><a href="examples/6_Embodied%20AI%20Robotics/README.md"><strong>📁 Embodied AI / Robotics</strong></a><br /><sub>126-160</sub></td>
+    <td width="20%" align="center" valign="middle"><a href="examples/7_AI%20Agent%20Reasoning/README.md"><strong>📁 AI Agent / Reasoning</strong></a><br /><sub>161-180</sub></td>
+    <td width="20%" align="center" valign="middle"><a href="examples/8_Data-centric%20AI/README.md"><strong>📁 Data-centric AI</strong></a><br /><sub>181-195</sub></td>
+    <td width="20%" align="center" valign="middle"><a href="examples/9_Emerging%20Cross-disciplinary%20Topics/README.md"><strong>📁 Emerging Cross-disciplinary Topics</strong></a><br /><sub>196-200</sub></td>
+    <td width="20%" align="center" valign="middle"><a href="examples/TOP_Popularity/README.md"><strong>📁 Top 20 High-Potential Topics</strong></a><br /><sub>201-220</sub></td>
   </tr>
 </table>
 

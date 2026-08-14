@@ -3,7 +3,7 @@
   <desc id="desc">The full title of Deep Academic Survey.</desc>
   <rect width="1455" height="190" fill="#FFFFFF" />
   <text x="345" y="82" font-family="Inter, Arial, Helvetica, sans-serif" font-size="76" font-weight="800" letter-spacing="-1.8">
-    <tspan fill="#59CCFF">D</tspan><tspan fill="#202734">eep </tspan><tspan fill="#B750F0">A</tspan><tspan fill="#202734">cademic </tspan><tspan fill="#FF950D">S</tspan><tspan fill="#202734">urvey:</tspan>
+    <tspan fill="#A93E3D">D</tspan><tspan fill="#202734">eep </tspan><tspan fill="#E98524">A</tspan><tspan fill="#202734">cademic </tspan><tspan fill="#528A68">S</tspan><tspan fill="#202734">urvey:</tspan>
   </text>
   <text x="727.5" y="150" text-anchor="middle" fill="#374151" font-family="Inter, Arial, Helvetica, sans-serif" font-size="42" font-weight="650" letter-spacing="-0.75">Stateful Agentic Closed-Loop Paradigm for Academic Survey Automation</text>
 </svg>
