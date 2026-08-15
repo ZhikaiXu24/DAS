@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1455" height="58" viewBox="0 0 1455 58" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1455" height="104" viewBox="0 0 1455 104" role="img" aria-labelledby="title desc">
   <title id="title">DAS framework highlight</title>
   <desc id="desc">The first stateful agentic framework for automatically generating publication-oriented academic surveys within 1 hour.</desc>
-  <rect width="1455" height="58" fill="#FFFFFF" />
-  <text y="38" fill="#202734" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400"><tspan x="126.7">The first </tspan><tspan x="212.3" fill="#A93E3D" font-weight="700">stateful agentic</tspan><tspan x="373.7"> framework for </tspan><tspan x="520.4" fill="#A93E3D" font-weight="700">automatically generating</tspan><tspan x="779.6"> </tspan><tspan x="785.7" fill="#A93E3D" font-weight="700">publication-oriented</tspan><tspan x="997.1"> academic surveys </tspan><tspan x="1185.4" fill="#A93E3D" font-weight="700">within 1 hour</tspan><tspan x="1322.3">.</tspan></text>
+  <rect width="1455" height="104" fill="#FFFFFF" />
+  <text x="727.5" y="40" text-anchor="middle" fill="#202734" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="400"><tspan>The first</tspan><tspan dx="8" fill="#A93E3D" font-weight="700">stateful agentic</tspan><tspan dx="8">framework for</tspan><tspan dx="8" fill="#A93E3D" font-weight="700">automatically generating</tspan></text>
+  <text x="727.5" y="84" text-anchor="middle" fill="#202734" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="400"><tspan fill="#A93E3D" font-weight="700">publication-oriented</tspan><tspan dx="8">academic surveys</tspan><tspan dx="8" fill="#A93E3D" font-weight="700">within 1 hour</tspan><tspan>.</tspan></text>
 </svg>
