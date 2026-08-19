@@ -7,7 +7,7 @@
 <sup>1</sup>Zhejiang University &nbsp;&nbsp; <sup>2</sup>Shanghai Jiao Tong University<br />
 <sup>&#42;</sup>Equal contribution &nbsp;&nbsp; <sup>&#9993;</sup>Corresponding author
 
-<img src="https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white" alt="arXiv Paper" />
+<a href="https://arxiv.org/abs/2608.18034"><img src="https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white" alt="arXiv Paper" /></a>
 <a href="https://huggingface.co/datasets/ZhikaiXu24/DAS-2M"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-DAS--2M-FF950D" alt="Hugging Face DAS-2M" /></a>
 <a href="https://zhikaixu24.github.io/projects/DAS/"><img src="https://img.shields.io/badge/%F0%9F%8C%90_DAS-Website-B750F0" alt="DAS Website" /></a>
 
@@ -25,7 +25,7 @@
 - ⏳ **DAS method code:** To be released.
 - ⏳ **Additional source support:** To be released (web pages, technical reports, perspectives, and other sources).
 
-The arXiv badge will be activated when the public paper link becomes available.
+The paper is available on [arXiv](https://arxiv.org/abs/2608.18034).
 
 ## 🔭 Overview
 
