@@ -111,7 +111,7 @@ Representative first and interior pages from Codex, GPT Deep Research, AutoSurve
 
 ## Topics and metadata
 
-DAS-2M is distributed separately through Hugging Face and is intentionally not duplicated in this Git repository. The public metadata schema is provided in `benchmark/metadata_schema.json`; the dataset URL will be added to `data/README.md` when the public link is activated.
+DAS-2M is distributed separately through [Hugging Face](https://huggingface.co/datasets/ZhikaiXu24/DAS-2M) and is intentionally not duplicated in this Git repository. The public metadata schema is provided in `benchmark/metadata_schema.json`. The current DAS-Bench topics, results, and evaluation toolkit are also distributed through the [DAS-Bench dataset repository](https://huggingface.co/datasets/ZhikaiXu24/DAS-Bench).
 
 ## Evaluation code
 

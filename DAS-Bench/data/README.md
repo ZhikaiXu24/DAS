@@ -16,5 +16,7 @@ data/metadata/<topic_id>/<rank>_<arxiv_id>.json
 
 Each record should follow `benchmark/metadata_schema.json`. Do not include private filesystem paths in `basic_info.file_path`. Parsed paper Markdown is optional and may be placed under `data/mineru/` using the layout distributed with DAS-2M.
 
-Hugging Face dataset: link forthcoming.
+Hugging Face datasets:
 
+- [DAS-Bench](https://huggingface.co/datasets/ZhikaiXu24/DAS-Bench) provides directly loadable topics and public benchmark results.
+- [DAS-2M](https://huggingface.co/datasets/ZhikaiXu24/DAS-2M) provides the literature metadata lake used with the benchmark schema.
